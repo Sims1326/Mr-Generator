@@ -16,12 +16,16 @@ var specialCharacters =  "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~" ;
 var charSubset = ""
 var password = ""
 
-    let passwordLength = window.prompt("How many characters? (8-129)")
+
+
+
+
+    passwordLength = window.prompt("How many characters? (8-129)")
     passwordLength = parseInt(passwordLength) ;
 
-    while (passwordLength >129 || passwordLength < 8) {
+    while (passwordLength >129 || passwordLength < 8 ) {
         window.alert("password must be between 8 and 129 characters")
-        let passwordLength = window.prompt("How many characters? (8-129)")
+        var passwordLength = window.prompt("How many characters? (8-129)")
         passwordLength = parseInt(passwordLength) ; 
 
     }
@@ -65,7 +69,7 @@ var password = ""
 
      }
 
-     console.log(password)
+     return password
    
 
     
